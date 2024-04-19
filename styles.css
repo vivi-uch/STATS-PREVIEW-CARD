@@ -1,0 +1,81 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: "Inter", sans-serif;
+    padding: 100px 50px;
+    font-size: 16px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* attribution */
+.attribution {
+     font-size: 14px; 
+     text-align: center;
+     color: hsl(0, 0%, 100%);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* container */
+.container{
+    border-radius: 5%;
+    background-color: hsl(244, 38%, 16%);
+    width: 900px;
+    display: flex;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+
+/* left-section */
+#left-side{
+    padding: 50px;
+}
+p{
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+}
+.purple-text{
+    color: hsl(277, 64%, 61%);
+}
+
+
+/* ratings */
+.ratings{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.rate{
+    text-align: left;
+}
+.rate p:first-child{
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    margin: 0 0 0.4rem;
+}
+.rate p:last-child {
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 200;
+    margin: 0;
+}
+
+/* right side */
+#right-side img{
+    width: 450px;
+    height: 100%;
+}
+
+
