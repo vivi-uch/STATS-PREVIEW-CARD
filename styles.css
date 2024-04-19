@@ -73,9 +73,13 @@ h1{
 }
 
 /* right side */
+#right-side{
+    background-color:  hsl(277, 64%, 61%);
+}
 #right-side img{
     width: 28.125rem; /* 450px */
     height: 100%;
+    mix-blend-mode: multiply;
 }
 
 /*styles for things like ipad and tablets*/
