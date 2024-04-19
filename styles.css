@@ -1,8 +1,8 @@
 body{
     background-color: hsl(233, 47%, 7%);
     font-family: "Inter", sans-serif;
-    padding: 100px 50px;
-    font-size: 16px;
+    padding: 6.25rem 3.125rem; /* 100px 50px */
+    font-size: 1rem; /* 16px */
 }
 main{
     display: flex;
@@ -14,7 +14,7 @@ main{
 
 /* attribution */
 .attribution {
-     font-size: 14px; 
+     font-size: 0.875rem; /* 14px */
      text-align: center;
      color: hsl(0, 0%, 100%);
 }
@@ -27,16 +27,16 @@ main{
 .container{
     border-radius: 5%;
     background-color: hsl(244, 38%, 16%);
-    width: 900px;
+    width: 56.25rem; /* 900px */
     display: flex;
-    height: 350px;
-    margin-bottom: 20px;
+    height: 21.875rem; /* 350px */
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 
 /* left-section */
 #left-side{
-    padding: 50px;
+    padding: 3.125rem; /* 50px */
 }
 p{
     color:  hsla(0, 0%, 100%, 0.75);
@@ -54,19 +54,19 @@ h1{
 .ratings{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 3.125rem; /* 50px */
 }
 .rate{
     text-align: left;
 }
 .rate p:first-child{
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-weight: 500;
     color: hsl(0, 0%, 100%);
     margin: 0 0 0.4rem;
 }
 .rate p:last-child {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     color: hsla(0, 0%, 100%, 0.6);
     font-weight: 200;
     margin: 0;
@@ -74,8 +74,33 @@ h1{
 
 /* right side */
 #right-side img{
-    width: 450px;
+    width: 28.125rem; /* 450px */
     height: 100%;
 }
 
+/*styles for things like ipad and tablets*/
+@media (max-width: 768px) {
+    body {
+        padding: 3.125rem 1.5625rem; /* 50px 25px */
+    }
+    .container {
+        width: 100%; /* Full width */
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Adjust height based on content */
+    }
+    #left-side {
+        padding: 1.5625rem; /* 25px */
+    }
+    /*Realised that the image was cut off*/
+    #right-side img{
+         width: 100%; /*full width*/
+         height: 100%;
+    }
+}
 
+/* Styles for mobile phones */
+@media (max-width: 375px) {
+    .container {
+        border-radius: 0; /* Remove border radius */
+    }
+}
